@@ -1,4 +1,4 @@
-# Experiment1
+# Experiment 1
 
 The time of downloading 1 file in 1GB, measured in seconds, in 10 different scenarios between 1 proxy 1 connection in total to 10 proxy 10 connections in total
 
