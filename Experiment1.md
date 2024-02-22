@@ -34,7 +34,7 @@ Client Side:
 cd Project5296-ClientTool
 for i in {1..10}; do head -n $i etc/instance.txt > "etc/instance$i.txt"; done
 echo "http://(Server's IP)/download/1000.out > /dev/null" > etc/LINKS.txt
-for i in {1..10}; do go run . -connections $i -proxies etc/INSTANCES.txt -requests etc/LINKS.txt -log logs/"$(date -Ins).log" -name Attemp$i -timeLog Experiment1_Result.log; done
+for i in {1..10}; do go run . -connections $i -proxies etc/instance$i.txt -requests etc/LINKS.txt -log logs/"$(date -Ins).log" -name Attemp$i -timeLog Experiment1_Result.log; done
 ```
 4. Download timelog to local
 5. Exit the SSH session
