@@ -51,10 +51,10 @@ for i in {1..3}; do echo "http://(Server's IP)/download/5000.out > /dev/null" >>
 for i in {1..4}; do echo "http://(Server's IP)/download/5000.out > /dev/null" >> etc/LINKS4.txt; done
 for i in {1..5}; do echo "http://(Server's IP)/download/5000.out > /dev/null" >> etc/LINKS5.txt; done
 #Go through all 5 column with 1-5 connection 
-for i in {1..5}; do go run . -connections $i -proxies etc/instances1.txt -requests etc/LINKS$i.txt -log logs/"$(date -Ins).log" -name Attemp$i -timeLog Experiment4_t2.nano_${i}_Result.log; done
-for i in {1..5}; do go run . -connections $i -proxies etc/instances2.txt -requests etc/LINKS$i.txt -log logs/"$(date -Ins).log" -name Attemp$i -timeLog Experiment4_t2.micro_${i}_Result.log; done
-for i in {1..5}; do go run . -connections $i -proxies etc/instances3.txt -requests etc/LINKS$i.txt -log logs/"$(date -Ins).log" -name Attemp$i -timeLog Experiment4_t3.nano_${i}_Result.log; done
-for i in {1..5}; do go run . -connections $i -proxies etc/instances4.txt -requests etc/LINKS$i.txt -log logs/"$(date -Ins).log" -name Attemp$i -timeLog Experiment4_t3.micro_${i}_Result.log; done
+for i in {1..5}; do go run . -connections $i -proxies etc/instances1.txt -requests etc/LINKS$i.txt -log logs/"$(date -Ins).log" -name Attemp$i -timeLog Experiment4_t2.nano_Result.log; done
+for i in {1..5}; do go run . -connections $i -proxies etc/instances2.txt -requests etc/LINKS$i.txt -log logs/"$(date -Ins).log" -name Attemp$i -timeLog Experiment4_t2.micro_Result.log; done
+for i in {1..5}; do go run . -connections $i -proxies etc/instances3.txt -requests etc/LINKS$i.txt -log logs/"$(date -Ins).log" -name Attemp$i -timeLog Experiment4_t3.nano_Result.log; done
+for i in {1..5}; do go run . -connections $i -proxies etc/instances4.txt -requests etc/LINKS$i.txt -log logs/"$(date -Ins).log" -name Attemp$i -timeLog Experiment4_t3.micro_Result.log; done
 ```
 4. Download timelog to local
 5. Exit the SSH session
