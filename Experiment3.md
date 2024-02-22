@@ -9,8 +9,8 @@ The time of downloading 900MB of file(s), measured in seconds, in 10 different s
 - 25 x 36MB files (each proxy download 5 files)
 - 30 x 30MB files (each proxy download 6 files)
 - 35 x 28.5714MB files (each proxy download 7 files)
-- 40 x 22.5MB files (each proxy download 8 files)
-- 45 x 20MB files (each proxy download 9 files)
+- 40 x 25MB files (each proxy download 8 files)
+- 45 x 22.5MB files (each proxy download 9 files)
 
 Setting:
 - Region: us-west-2
@@ -32,8 +32,8 @@ go run generate.go -m 45
 go run generate.go -m 36
 go run generate.go -m 30
 go run generate.go -m 28.5714
+go run generate.go -m 25
 go run generate.go -m 22.5
-go run generate.go -m 20
 ```
 3. Modify `default.conf`
 4. Run `sudo docker compose down && sudo docker compose up -d`
@@ -59,8 +59,8 @@ for i in {1..20}; do echo "http://(Server's IP)/download/45.out > /dev/null" >> 
 for i in {1..25}; do echo "http://(Server's IP)/download/36.out > /dev/null" >> etc/LINKS6.txt; done
 for i in {1..30}; do echo "http://(Server's IP)/download/30.out > /dev/null" >> etc/LINKS7.txt; done
 for i in {1..35}; do echo "http://(Server's IP)/download/28.5714.out > /dev/null" >> etc/LINKS8.txt; done
-for i in {1..40}; do echo "http://(Server's IP)/download/22.5.out > /dev/null" >> etc/LINKS9.txt; done
-for i in {1..45}; do echo "http://(Server's IP)/download/20.out > /dev/null" >> etc/LINKS10.txt; done
+for i in {1..40}; do echo "http://(Server's IP)/download/25.out > /dev/null" >> etc/LINKS9.txt; done
+for i in {1..45}; do echo "http://(Server's IP)/download/22.5.out > /dev/null" >> etc/LINKS10.txt; done
 for i in {1..10}; do go run . -connections 5 -proxies etc/instances.txt -requests etc/LINKS$i.txt -log logs/"$(date -Ins).log" -name Attemp$i -timeLog Experiment3_Result.log; done
 ```
 4. Download timelog to local
