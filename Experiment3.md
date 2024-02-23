@@ -1,16 +1,16 @@
 # Experiment 3
 
-The time of downloading 900MB of file(s), measured in seconds, in 10 different scenario via 5 proxy 5 connections in total, including:
-- 1 x 900MB file (each proxy download 1 file segemnt in 180MB)
-- 5 x 180MB files (each proxy download 1 file)
-- 10 x 90MB files (each proxy download 2 files)
-- 15 x 60MB files (each proxy download 3 files)
-- 20 x 45MB files (each proxy download 4 files)
-- 25 x 36MB files (each proxy download 5 files)
-- 30 x 30MB files (each proxy download 6 files)
-- 35 x 28.5714MB files (each proxy download 7 files)
-- 40 x 25MB files (each proxy download 8 files)
-- 45 x 22.5MB files (each proxy download 9 files)
+The time of downloading 900MB of file(s), measured in seconds, in 10 different scenarios via 5 proxy 5 connections in total, including:
+- 1 x 900MB file (each proxy downloads 1 file segemnt in 180MB)
+- 5 x 180MB files (each proxy downloads 1 file)
+- 10 x 90MB files (each proxy downloads 2 files)
+- 15 x 60MB files (each proxy downloads 3 files)
+- 20 x 45MB files (each proxy downloads 4 files)
+- 25 x 36MB files (each proxy downloads 5 files)
+- 30 x 30MB files (each proxy downloads 6 files)
+- 35 x 28.5714MB files (each proxy downloads 7 files)
+- 40 x 25MB files (each proxy downloads 8 files)
+- 45 x 22.5MB files (each proxy downloads 9 files)
 
 Setting:
 - Region: us-west-2
