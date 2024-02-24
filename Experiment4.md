@@ -43,7 +43,7 @@ mv instances.txt instances4.txt
 
 Client Side:
 1. Connect to the instance via SSH
-2. Copy all the instances?.txt from the local side to Project5296-ClientTool/etc/instance.txt
+2. Copy all the instances?.txt from the local side to Project5296-ClientTool/etc/
 3. Execute the following commands:
 ```bash
 cd Project5296-ClientTool
