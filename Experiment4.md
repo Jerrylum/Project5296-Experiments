@@ -1,6 +1,6 @@
 # Experiment 4
 
-The time of download n file in 5GB, measured in seconds, where n is the number of connections, in 4 x 7 different scenario with 1 proxy as follows:
+The time of download n file in 5GB, measured in seconds, where n is the number of connections, in 4 x 7 different scenarios with 1 proxy as follows:
 |             |t2.nano|t2.micro|t3.nano|t3.micro|
 |-------------|-------|--------|-------|--------|
 |1 Connection |       |        |       |        |
