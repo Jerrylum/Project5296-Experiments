@@ -1,6 +1,6 @@
 # Experiment 5
 
-The time of download a file in 5GB, measured in seconds, with no request processing rate per IP limitation, in 4 x 7 different scenario with 1 proxy as follows:
+The time of download a file in 5GB, measured in seconds, with no request processing rate per IP limitation, in 4 x 4 different scenario with 1 proxy as follows:
 |             |t2.nano|t2.micro|t3.nano|t3.micro|
 |-------------|-------|--------|-------|--------|
 |1 Connection |       |        |       |        |
